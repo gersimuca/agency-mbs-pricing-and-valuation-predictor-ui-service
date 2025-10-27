@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Optional: container max width */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Input focus effect for better UX */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* Indigo-500 focus ring */
+}
+
+/* Button hover */
+button:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
